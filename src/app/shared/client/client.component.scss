@@ -1,0 +1,72 @@
+:host {
+  .container {
+    height: 3.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--white);
+    padding: 0 0.5rem;
+  }
+
+  .table {
+    width:100%;
+  }
+
+  .table-row {
+    display:flex;
+    width:100%;
+    padding:2rem;
+  }
+
+  .table-data {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .client-name {
+      max-width: 15rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      margin-right: 0.6rem;
+    }
+
+    .client-cnpj {
+      display: flex;
+      align-items: flex-end;
+      font-size: 0.7rem;
+
+    }
+  }
+
+  .status-active {
+    content: 'Active';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: var(--green);
+
+    &::before {
+      content: 'Active';
+      margin-left: 1rem;
+    }
+  }
+
+  .status-inactive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: var(--red);
+
+    &::after {
+      content: 'Inactive';
+      margin-left: 1rem;
+    }
+  }
+}

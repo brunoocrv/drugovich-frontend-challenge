@@ -1,0 +1,42 @@
+:host {
+
+  main {
+    padding: 5rem 12.6rem;
+
+    .home-header {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      .sub-header {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        div {
+          display: flyonex;
+          justify-content: center;
+          align-items: center;
+
+          span {
+            font-size: 1.6rem;
+            margin-left: 0.3rem;
+          }
+
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+
+      &::after {
+        content: '';
+        width: 100%;
+        border: 1px solid var(--gray);
+      }
+    }
+  }
+}

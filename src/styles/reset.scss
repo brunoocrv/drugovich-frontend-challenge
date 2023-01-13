@@ -4,6 +4,7 @@
 	border: 0;
 	font-size: 100%;
 	font-weight: 400;
+  font-family: 'Monda', sans-serif;
 }
 
 
@@ -13,4 +14,8 @@ body {
 
 button {
   cursor: pointer;
+}
+
+ul, li {
+  text-decoration: none;
 }

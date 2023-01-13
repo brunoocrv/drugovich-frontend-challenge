@@ -1,0 +1,46 @@
+:host {
+  .primary {
+    width: 5.6rem;
+    height: 2.1rem;
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-right: 0.3rem;
+    }
+  }
+
+  .secondary {
+    width: 5.6rem;
+    height: 2.1rem;
+    background: var(--orange);
+    color: var(--white);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-right: 0.3rem;
+    }
+  }
+
+  .success {
+    width: 5.6rem;
+    height: 2.1rem;
+    background: var(--green);
+    color: var(--white);
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin-right: 0.3rem;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+<app-header></app-header>
+<main>
+  <section class="home-header">
+    <section class="sub-header">
+      <div>
+        <img src="assets/images/user.svg" alt="User Logo">
+        <span>Client List</span>
+      </div>
+      <a [routerLink]="['client/new']">
+        <app-button
+          [text]="newClientButton"
+          [domClass]="newButtonClass"
+          [hasIcon]="newButtonHasIcon"
+          [icon]="icon"
+          >
+        </app-button>
+      </a>
+    </section>
+  </section>
+  <section class="client-container">
+    <li class="client-list" *ngFor="let item of clients">
+      <app-client
+        [clientName]="item.name"
+        [clientCNPJ]="item.cnpj"
+        [isActive]="item.status"
+      >
+      </app-client>
+    </li>
+  </section>
+</main>
