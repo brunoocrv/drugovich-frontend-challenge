@@ -1,5 +1,6 @@
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { NewClientComponent } from './new-client/new-client.component';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { RoutingModule } from './routing.module';
@@ -18,7 +19,8 @@ import { SharedModule } from '../shared/shared.module';
     CommonModule,
     RoutingModule,
     SharedModule,
-  ],
-  schemas: [CUSTOM_ELEMENTS_SCHEMA]
+    FormsModule,
+    ReactiveFormsModule
+  ]
 })
 export class PagesModule { }

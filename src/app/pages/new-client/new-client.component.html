@@ -8,4 +8,18 @@
       </div>
     </section>
   </section>
+  <form [formGroup]="clientForm" class="client-form" (ngSubmit)="handleSubmit()">
+
+    <label for="name">Name</label>
+    <input id="name" type="text" formControlName="name">
+
+    <label for="cnpj">CNPJ</label>
+    <input id="cnpj" type="text" formControlName="cnpj">
+
+    <label for="status">Status</label>
+    <select id="status" (change)="handleStatusChange($event)" formControlName="status">
+      <option *ngFor="let item of Status" [ngValue]="item">{{item}}</option>
+    </select>
+    <custom-button [text]="newClientButton" [domClass]="newButtonClass" [buttonType]="newButtonType"></custom-button>
+  </form>
 </main>
